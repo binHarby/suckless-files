@@ -9,8 +9,8 @@ sudo firewall-cmd --add-port=1025-65535/tcp --permanent
 sudo firewall-cmd --add-port=1025-65535/udp --permanent
 sudo firewall-cmd --reload
 
-git clone https://aur.archlinux.org/pikaur.git
-cd pikaur/
+git clone https://aur.archlinux.org/paru-bin.git
+cd paru-bin/
 makepkg -si --noconfirm
 
 #pikaur -S --noconfirm system76-power
@@ -25,6 +25,7 @@ sudo pacman -S  xorg sddm plasma kde-applications firefox simplescreenrecorder o
 #sudo flatpak install -y spotify
 
 sudo systemctl enable sddm
+
 /bin/echo -e "\e[1;32mREBOOTING IN 5..4..3..2..1..\e[0m"
 #sleep 5
 #reboot
